@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiaohudu.questionnaire.mapper.questionnaire.QuestionnaireQuestionMapper">
+  <insert id="insertBatch" useGeneratedKeys="true">
+    INSERT INTO questionnaire_question ( id, questionnaire_id, title, type, required, sort_no, create_by, create_time )
+    VALUES
+    <foreach collection="questionnaireQuestionList" item="item" index="index" separator=",">
+      (
+        #{item.id},
+        #{item.questionnaireId},
+        #{item.title},
+        #{item.type},
+        #{item.required},
+        #{item.sortNo},
+        #{item.createBy},
+        #{item.createTime}
+      )
+    </foreach>
+  </insert>
+</mapper>

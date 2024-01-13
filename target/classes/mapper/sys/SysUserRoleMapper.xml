@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiaohudu.questionnaire.mapper.sys.SysUserRoleMapper">
+  <select id="selectPageByUserId" resultType="SysRole">
+    SELECT
+      sys_role.*, sys_user_role.id AS userRoleId
+    FROM
+      sys_user_role
+      LEFT JOIN sys_role ON sys_role.id = sys_user_role.role_id
+    <where>
+      sys_user_role.user_id = #{sysUserRolePageByUserReqVO.userId}
+      <if test='sysUserRolePageByUserReqVO.roleName != null'>
+        AND sys_role.role_name LIKE CONCAT('%', #{sysUserRolePageByUserReqVO.roleName}, '%')
+      </if>
+      <if test='sysUserRolePageByUserReqVO.roleCode != null'>
+        AND sys_role.role_code LIKE CONCAT('%', #{sysUserRolePageByUserReqVO.roleCode}, '%')
+      </if>
+    </where>
+  </select>
+  <insert id="insertBatch">
+    INSERT IGNORE INTO sys_user_role ( id, user_id, role_id, create_by, create_time )
+    VALUES
+    <foreach collection="sysUserRoleList" item="item" index="index" separator=",">
+      (
+        REPLACE(UUID(), "-", ""),
+        #{item.userId},
+        #{item.roleId},
+        #{item.createBy},
+        #{item.createTime}
+      )
+    </foreach>
+  </insert>
+  <select id="selectListByUserId" resultType="SysRole">
+    SELECT
+      sys_role.*
+    FROM
+      sys_user_role
+      LEFT JOIN sys_role ON sys_role.id = sys_user_role.role_id
+    WHERE
+      sys_user_role.user_id = #{userId}
+  </select>
+</mapper>

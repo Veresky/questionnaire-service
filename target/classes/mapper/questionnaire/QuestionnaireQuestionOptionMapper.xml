@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiaohudu.questionnaire.mapper.questionnaire.QuestionnaireQuestionOptionMapper">
+  <insert id="insertBatch">
+    INSERT INTO questionnaire_question_option ( id, questionnaire_id, question_id, name, inputable, sort_no, create_by, create_time )
+    VALUES
+    <foreach collection="questionnaireQuestionOptionList" item="item" index="index" separator=",">
+      (
+        REPLACE(UUID(), "-", ""),
+        #{item.questionnaireId},
+        #{item.questionId},
+        #{item.name},
+        #{item.inputable},
+        #{item.sortNo},
+        #{item.createBy},
+        #{item.createTime}
+      )
+    </foreach>
+  </insert>
+</mapper>

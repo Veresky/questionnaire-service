@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiaohudu.questionnaire.mapper.sys.SysRoleModuleMapper">
+  <select id="selectListBySysRoleList" resultType="SysModule">
+    SELECT
+      sys_module.*
+    FROM
+      sys_role_module
+      LEFT JOIN sys_module ON sys_module.id = sys_role_module.module_id
+    WHERE
+      sys_role_module.role_id
+    IN
+      <foreach collection="sysRoleList" index="index" item="item" open="(" separator="," close=")">
+        #{item.id}
+      </foreach>
+  </select>
+</mapper>

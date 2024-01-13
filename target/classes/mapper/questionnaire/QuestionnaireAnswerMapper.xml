@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiaohudu.questionnaire.mapper.questionnaire.QuestionnaireAnswerMapper">
+  <select id="selectCountGroupByQuestionOption" resultType="java.util.Map">
+    SELECT
+      questionnaire_answer.option_id AS optionId, COUNT(*) AS count
+    FROM
+      questionnaire_answer_sheet
+      LEFT JOIN questionnaire_answer ON questionnaire_answer_sheet.id = questionnaire_answer.answer_sheet_id
+    WHERE
+      questionnaire_answer_sheet.questionnaire_id = #{questionnaireId}
+      AND questionnaire_answer.option_id is not NULL
+    GROUP BY
+      questionnaire_answer.option_id
+  </select>
+</mapper>

@@ -1,0 +1,47 @@
+#参考 https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html
+
+server:
+  port: 8090
+  servlet:
+    context-path: /service
+
+spring:
+  profiles:
+    active: ${environment:local}
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  servlet:
+    multipart:
+      max-request-size: 100MB
+      max-file-size: 100MB
+  web:
+    resources:
+      static-locations: classpath:/static/,classpath:/templates/,file://${file.base-dir}
+
+# mp
+mybatis-plus:
+  mapper-locations: classpath*:mapper/**/*.xml
+  type-aliases-package: com.xiaohudu.questionnaire.entity,com.xiaohudu.questionnaire.vo.*
+  field-strategy:
+  global-config:
+    db-config:
+      id-type: 4 # uuid
+      logic-delete-field: deleteFlag  # 全局逻辑删除的实体字段名
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+      update-strategy: NOT_NULL # 更新策略
+  configuration:
+    map-underscore-to-camel-case: true # 下划线转驼峰
+
+# 日志
+logging:
+  file:
+    max-size: 100MB
+    max-history: 30
+
+# 微信小程序
+wx:
+  app-id: xxx
+  app-secret: xxx
+  base-url: https://api.weixin.qq.com/
