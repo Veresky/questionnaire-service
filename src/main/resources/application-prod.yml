@@ -25,5 +25,5 @@ logging:
 
 #文件信息
 file:
-  base-url: https://questionnaire-service-8423a5c6bce1.herokuapp.com:8090/service/  #访问地址
+  base-url: https://questionnaire-service-8423a5c6bce1.herokuapp.com/service/  #访问地址
   base-dir: /data/questionnaire/questionnaire-service/uploads #存储目录

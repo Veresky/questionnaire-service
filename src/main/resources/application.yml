@@ -1,7 +1,7 @@
 #参考 https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html
 
 server:
-  port: 8090
+  port: ${PORT:8090}
   servlet:
     context-path: /service
 
