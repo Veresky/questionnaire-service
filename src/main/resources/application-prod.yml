@@ -16,6 +16,7 @@ spring:
   redis:
     host: redis-12823.c10.us-east-1-2.ec2.cloud.redislabs.com
     port: 12823
+    password: 73yR9qLzzO11u21NKubSfVwcpUKWol5C
 
 #日志
 logging:
