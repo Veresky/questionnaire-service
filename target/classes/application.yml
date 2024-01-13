@@ -7,10 +7,10 @@ server:
 
 spring:
   profiles:
-    active: ${environment:prod}
+    active: prod
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
-    time-zone: GMT+8
+    time-zone: GMT+8git
   servlet:
     multipart:
       max-request-size: 100MB
