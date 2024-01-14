@@ -26,9 +26,9 @@ spring:
       strict: true
       datasource:
         master:
-          url: jdbc:mysql://bv2rebwf6zzsv341.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/xkb37t4b3twhf2ab?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+          url: jdbc:mysql://bv2rebwf6zzsv341.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/xkb37t4b3twhf2ab?useUnicode=true&characterEncoding=utf8
           username: yauh4v1kuy48gz7m
-          password: ufl0197xufd2bc8m
+          password: syl4dpwui20nrfhr
           type: com.zaxxer.hikari.HikariDataSource
           driver-class-name: com.mysql.cj.jdbc.Driver
   redis:
@@ -43,5 +43,5 @@ logging:
 
 #文件信息
 file:
-  base-url: https://questionnaire-service-8423a5c6bce1.herokuapp.com/service/  #访问地址
+  base-url: https://questionnaire-service-8423a5c6bce1.herokuapp.com/service/ #访问地址
   base-dir: /data/questionnaire/questionnaire-service/uploads #存储目录
