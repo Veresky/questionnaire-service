@@ -10,7 +10,7 @@ spring:
         master:
           url: jdbc:mysql://bv2rebwf6zzsv341.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/xkb37t4b3twhf2ab?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
           username: yauh4v1kuy48gz7m
-          password: h9k9ce5q00pu4u3t
+          password: b9kffv3sc09vwces
           type: com.zaxxer.hikari.HikariDataSource
           driver-class-name: com.mysql.cj.jdbc.Driver
   redis:

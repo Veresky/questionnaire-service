@@ -20,18 +20,6 @@ public class MyWebMvcConfigurer implements WebMvcConfigurer {
   }
 
   @Override
-  public void addCorsMappings(CorsRegistry registry) {
-    registry.addMapping("/**")
-            //是否发送Cookie
-            .allowCredentials(true)
-            //放行哪些原始域
-            .allowedOrigins("https://questionnaire-client-320a500d3b93.herokuapp.com", "http://localhost:[*]")
-            .allowedMethods(new String[]{"GET", "POST", "PUT", "DELETE"})
-            .allowedHeaders("*")
-            .exposedHeaders("*");
-  }
-
-  @Override
   public void addInterceptors(InterceptorRegistry registry) {
     // 监控日志
     registry.addInterceptor(monitorLogInterceptor())
