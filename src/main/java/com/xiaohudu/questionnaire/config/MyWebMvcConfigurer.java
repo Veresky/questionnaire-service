@@ -26,7 +26,7 @@ public class MyWebMvcConfigurer implements WebMvcConfigurer {
             .allowedMethods("*")
             .allowedHeaders("*")
             .maxAge(3600)
-            .allowCredentials(true);
+            .allowCredentials(false);
   }
 
   @Override
