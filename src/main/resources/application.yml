@@ -7,7 +7,7 @@ server:
 
 spring:
   profiles:
-    active: @environment@
+    active: ${environment:local}
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8git

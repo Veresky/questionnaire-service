@@ -1,5 +1,22 @@
 #参考 https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html
 
+##数据源
+#spring:
+#  datasource:
+#    dynamic:
+#      primary: master
+#      strict: true
+#      datasource:
+#        master:
+#          url: jdbc:mysql://localhost:3306/questionnaire?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+#          username: root
+#          password: root
+#          type: com.zaxxer.hikari.HikariDataSource
+#          driver-class-name: com.mysql.cj.jdbc.Driver
+#  redis:
+#    host: localhost
+#    port: 6379
+
 #数据源
 spring:
   datasource:
@@ -8,14 +25,15 @@ spring:
       strict: true
       datasource:
         master:
-          url: jdbc:mysql://localhost:3306/questionnaire?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
-          username: root
-          password: root
+          url: jdbc:mysql://bv2rebwf6zzsv341.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/xkb37t4b3twhf2ab?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+          username: yauh4v1kuy48gz7m
+          password: b318gttm06a2eeyp
           type: com.zaxxer.hikari.HikariDataSource
           driver-class-name: com.mysql.cj.jdbc.Driver
   redis:
-    host: localhost
-    port: 6379
+    host: redis-12823.c10.us-east-1-2.ec2.cloud.redislabs.com
+    port: 12823
+    password: 73yR9qLzzO11u21NKubSfVwcpUKWol5C
 
 #日志
 logging:
