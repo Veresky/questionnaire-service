@@ -4,13 +4,10 @@ import com.xiaohudu.questionnaire.interceptor.LoginInterceptor;
 import com.xiaohudu.questionnaire.interceptor.MonitorLogInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-@EnableWebMvc
 public class MyWebMvcConfigurer implements WebMvcConfigurer {
   @Bean
   public LoginInterceptor loginInterceptor() {
@@ -19,11 +16,6 @@ public class MyWebMvcConfigurer implements WebMvcConfigurer {
   @Bean
   public MonitorLogInterceptor monitorLogInterceptor() {
     return new MonitorLogInterceptor();
-  }
-
-  @Override
-  public void addCorsMappings(CorsRegistry registry) {
-    registry.addMapping("/**");
   }
 
   @Override
