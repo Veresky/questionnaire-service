@@ -457,3 +457,21 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2024-01-14 14:58:09.493 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
 2024-01-14 14:58:09.784 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
 2024-01-14 14:58:09.784 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-01-14 15:11:25.235 [main] INFO  c.x.q.QuestionnaireServiceApplicationTests - Starting QuestionnaireServiceApplicationTests using Java 17.0.2 on DESKTOP-IB0CDUP with PID 10472 (started by 43542 in D:\project\questionnaire\questionnaire-service)
+2024-01-14 15:11:25.236 [main] INFO  c.x.q.QuestionnaireServiceApplicationTests - The following 1 profile is active: "local"
+2024-01-14 15:11:25.245 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2024-01-14 15:11:25.945 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-01-14 15:11:25.948 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-01-14 15:11:25.973 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2024-01-14 15:11:26.418 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-14 15:11:26.425 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$295b66b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-14 15:11:26.453 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-14 15:11:26.683 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-01-14 15:11:27.496 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-01-14 15:11:27.497 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-01-14 15:11:27.497 [main] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2024-01-14 15:11:31.299 [main] INFO  c.x.q.QuestionnaireServiceApplicationTests - Started QuestionnaireServiceApplicationTests in 6.448 seconds (JVM running for 7.233)
+2024-01-14 15:11:31.922 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-01-14 15:11:31.923 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-01-14 15:11:32.209 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-01-14 15:11:32.209 [SpringApplicationShutdownHook] INFO  c.b.dynamic.datasource.DynamicRoutingDataSource - dynamic-datasource all closed success,bye

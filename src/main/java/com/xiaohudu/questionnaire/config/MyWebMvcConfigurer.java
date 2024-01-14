@@ -22,7 +22,7 @@ public class MyWebMvcConfigurer implements WebMvcConfigurer {
   @Override
   public void addCorsMappings(CorsRegistry registry) {
     registry.addMapping("/**")
-            .allowedOriginPatterns("http://localhost:8080", "https://questionnaire-client-320a500d3b93.herokuapp.com","99.230.11.135:*")
+            .allowedOriginPatterns("*")
             .allowedMethods("*")
             .allowedHeaders("*")
             .maxAge(3600)
