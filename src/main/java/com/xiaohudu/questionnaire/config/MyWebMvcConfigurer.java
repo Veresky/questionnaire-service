@@ -23,7 +23,9 @@ public class MyWebMvcConfigurer implements WebMvcConfigurer {
 
   @Override
   public void addCorsMappings(CorsRegistry registry) {
-    registry.addMapping("/**");
+    registry.addMapping("/**")
+            .allowedOrigins("https://questionnaire-client-320a500d3b93.herokuapp.com") // 允许的域
+            .allowedMethods("GET", "POST", "PUT", "DELETE"); // 允许的方法
   }
 
   @Override
