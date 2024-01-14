@@ -61,7 +61,6 @@ com\xiaohudu\questionnaire\vo\req\sys\SysUserPageReqVO.class
 com\xiaohudu\questionnaire\mapper\sys\SysDictItemMapper.class
 com\xiaohudu\questionnaire\entity\MonitorLog.class
 com\xiaohudu\questionnaire\service\questionnaire\QuestionnaireQuestionnaireService.class
-com\xiaohudu\questionnaire\config\CorsConfig.class
 com\xiaohudu\questionnaire\controller\questionnaire\QuestionnaireQuestionnaireController.class
 com\xiaohudu\questionnaire\controller\sys\SysRoleModuleController.class
 com\xiaohudu\questionnaire\entity\QuestionnaireAnswerSheet.class
