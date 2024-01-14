@@ -24,6 +24,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+@CrossOrigin(origins = "https://questionnaire-client-320a500d3b93.herokuapp.com")
 @RestController
 @RequestMapping("auth")
 public class LoginController {
