@@ -26,6 +26,7 @@ import java.util.concurrent.TimeUnit;
 
 @RestController
 @RequestMapping("auth")
+@CrossOrigin(origins = "*")
 public class LoginController {
   @Autowired
   private SysUserService sysUserService;

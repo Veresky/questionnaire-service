@@ -18,6 +18,15 @@ public class MyWebMvcConfigurer implements WebMvcConfigurer {
   public MonitorLogInterceptor monitorLogInterceptor() {
     return new MonitorLogInterceptor();
   }
+
+  @Override
+  public void addCorsMappings(CorsRegistry registry) {
+    registry.addMapping("/**")
+            .allowedOrigins("*")
+            .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS")
+            .allowedHeaders("*")
+            .allowCredentials(true);
+  }
   @Override
   public void addInterceptors(InterceptorRegistry registry) {
     // 监控日志
