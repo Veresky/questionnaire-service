@@ -18,7 +18,6 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("auth")
-@CrossOrigin(origins = "http://localhost:8080")
 public class CurrentUserController {
   @Autowired
   private SysUserService sysUserService;

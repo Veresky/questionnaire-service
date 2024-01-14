@@ -26,7 +26,6 @@ import java.util.concurrent.TimeUnit;
 
 @RestController
 @RequestMapping("auth")
-@CrossOrigin(origins = "http://localhost:8080")
 public class LoginController {
   @Autowired
   private SysUserService sysUserService;
