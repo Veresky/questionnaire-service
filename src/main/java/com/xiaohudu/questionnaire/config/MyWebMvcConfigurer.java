@@ -22,7 +22,11 @@ public class MyWebMvcConfigurer implements WebMvcConfigurer {
   @Override
   public void addCorsMappings(CorsRegistry registry) {
     registry.addMapping("/service/**")
-            .allowedOrigins("https://questionnaire-client-320a500d3b93.herokuapp.com");
+            .allowedOriginPatterns("*")
+            .allowedMethods("*")
+            .allowedHeaders("*")
+            .maxAge(3600)
+            .allowCredentials(true);
   }
 
   @Override
