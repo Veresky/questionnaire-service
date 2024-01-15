@@ -12,6 +12,7 @@ D:\project\questionnaire\questionnaire-service\src\main\java\com\xiaohudu\questi
 D:\project\questionnaire\questionnaire-service\src\main\java\com\xiaohudu\questionnaire\controller\questionnaire\QuestionnaireAnswerController.java
 D:\project\questionnaire\questionnaire-service\src\main\java\com\xiaohudu\questionnaire\controller\questionnaire\QuestionnaireQuestionnaireController.java
 D:\project\questionnaire\questionnaire-service\src\main\java\com\xiaohudu\questionnaire\controller\auth\CurrentUserController.java
+D:\project\questionnaire\questionnaire-service\src\main\java\com\xiaohudu\questionnaire\config\CorsConfig.java
 D:\project\questionnaire\questionnaire-service\src\main\java\com\xiaohudu\questionnaire\mapper\sys\SysUserRoleMapper.java
 D:\project\questionnaire\questionnaire-service\src\main\java\com\xiaohudu\questionnaire\mapper\questionnaire\QuestionnaireQuestionnaireMapper.java
 D:\project\questionnaire\questionnaire-service\src\main\java\com\xiaohudu\questionnaire\mapper\sys\SysUserMapper.java
@@ -80,7 +81,6 @@ D:\project\questionnaire\questionnaire-service\src\main\java\com\xiaohudu\questi
 D:\project\questionnaire\questionnaire-service\src\main\java\com\xiaohudu\questionnaire\controller\sys\SysRolePermissionController.java
 D:\project\questionnaire\questionnaire-service\src\main\java\com\xiaohudu\questionnaire\utils\ServletContextUtils.java
 D:\project\questionnaire\questionnaire-service\src\main\java\com\xiaohudu\questionnaire\service\sys\SysRoleModuleService.java
-D:\project\questionnaire\questionnaire-service\src\main\java\com\xiaohudu\questionnaire\controller\SPAController.java
 D:\project\questionnaire\questionnaire-service\src\main\java\com\xiaohudu\questionnaire\entity\MonitorLog.java
 D:\project\questionnaire\questionnaire-service\src\main\java\com\xiaohudu\questionnaire\entity\SysDict.java
 D:\project\questionnaire\questionnaire-service\src\main\java\com\xiaohudu\questionnaire\mapper\questionnaire\QuestionnaireAnswerSheetMapper.java
