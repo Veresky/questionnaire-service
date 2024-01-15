@@ -20,16 +20,6 @@ public class MyWebMvcConfigurer implements WebMvcConfigurer {
   }
 
   @Override
-  public void addCorsMappings(CorsRegistry registry) {
-    registry.addMapping("/**")
-            .allowedOriginPatterns("*")
-            .allowedMethods("*")
-            .allowedHeaders("*")
-            .maxAge(3600)
-            .allowCredentials(true);
-  }
-
-  @Override
   public void addInterceptors(InterceptorRegistry registry) {
     // 监控日志
     registry.addInterceptor(monitorLogInterceptor())
