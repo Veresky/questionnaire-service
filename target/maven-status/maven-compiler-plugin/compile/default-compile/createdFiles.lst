@@ -86,6 +86,7 @@ com\xiaohudu\questionnaire\controller\auth\CurrentUserController.class
 com\xiaohudu\questionnaire\constant\Constant.class
 com\xiaohudu\questionnaire\vo\req\IdReqVO.class
 com\xiaohudu\questionnaire\mapper\sys\SysModuleMapper.class
+com\xiaohudu\questionnaire\controller\SPAController.class
 com\xiaohudu\questionnaire\mapper\sys\SysRoleMapper.class
 com\xiaohudu\questionnaire\mapper\sys\SysDictMapper.class
 com\xiaohudu\questionnaire\utils\ServletContextUtils.class
